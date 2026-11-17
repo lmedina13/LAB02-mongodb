@@ -1,0 +1,1228 @@
+[
+  {
+    "op": "query",
+    "ns": "comercial.clientes",
+    "command": {
+      "find": "clientes",
+      "filter": {
+        "ciudad": "Culiacan"
+      },
+      "lsid": {
+        "id": "711bce57-b36e-4b6c-9e91-7decb9c46de6"
+      },
+      "$db": "comercial"
+    },
+    "keysExamined": 0,
+    "docsExamined": 3,
+    "nBatches": 1,
+    "cursorExhausted": true,
+    "numYield": 0,
+    "nreturned": 2,
+    "queryHash": "14EB4ABA",
+    "planCacheKey": "14EB4ABA",
+    "queryFramework": "classic",
+    "locks": {
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 2,
+            "unsigned": false
+          }
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 2,
+            "unsigned": false
+          }
+        }
+      }
+    },
+    "flowControl": {},
+    "storage": {},
+    "responseLength": 348,
+    "protocol": "op_msg",
+    "millis": 0,
+    "planSummary": "COLLSCAN",
+    "planningTimeMicros": 122,
+    "execStats": {
+      "stage": "COLLSCAN",
+      "filter": {
+        "ciudad": {
+          "$eq": "Culiacan"
+        }
+      },
+      "nReturned": 2,
+      "executionTimeMillisEstimate": 0,
+      "works": 4,
+      "advanced": 2,
+      "needTime": 1,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "direction": "forward",
+      "docsExamined": 3
+    },
+    "ts": "2026-11-17T00:13:37.646Z",
+    "client": "127.0.0.1",
+    "appName": "mongosh 2.14.2",
+    "allUsers": [
+      {
+        "user": "admin",
+        "db": "admin"
+      }
+    ],
+    "user": "admin@admin"
+  },
+  {
+    "op": "insert",
+    "ns": "comercial.clientes",
+    "command": {
+      "insert": "clientes",
+      "documents": [
+        {
+          "nombre": "Pedro Ramirez",
+          "rfc": "RAMP040404DDD",
+          "ciudad": "Guasave",
+          "correo": "pedro@ejemplo.com",
+          "_id": "6afb9c3bdf00ebf88225e30b"
+        }
+      ],
+      "ordered": true,
+      "lsid": {
+        "id": "711bce57-b36e-4b6c-9e91-7decb9c46de6"
+      },
+      "$db": "comercial"
+    },
+    "ninserted": 1,
+    "keysInserted": 1,
+    "numYield": 0,
+    "locks": {
+      "ParallelBatchWriterMode": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          },
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "ReplicationStateTransition": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          },
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Database": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Collection": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      }
+    },
+    "flowControl": {
+      "acquireCount": {
+        "high": 0,
+        "low": 1,
+        "unsigned": false
+      }
+    },
+    "storage": {},
+    "responseLength": 45,
+    "protocol": "op_msg",
+    "millis": 0,
+    "ts": "2026-11-17T00:13:47.686Z",
+    "client": "127.0.0.1",
+    "appName": "mongosh 2.14.2",
+    "allUsers": [
+      {
+        "user": "admin",
+        "db": "admin"
+      }
+    ],
+    "user": "admin@admin"
+  },
+  {
+    "op": "update",
+    "ns": "comercial.clientes",
+    "command": {
+      "q": {
+        "nombre": "Luis Medina"
+      },
+      "u": {
+        "$set": {
+          "ciudad": "Mazatlan"
+        }
+      },
+      "multi": false,
+      "upsert": false
+    },
+    "keysExamined": 0,
+    "docsExamined": 1,
+    "nMatched": 1,
+    "nModified": 1,
+    "nUpserted": 0,
+    "keysInserted": 0,
+    "keysDeleted": 0,
+    "numYield": 0,
+    "locks": {
+      "ParallelBatchWriterMode": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          },
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "ReplicationStateTransition": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          },
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Database": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Collection": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      }
+    },
+    "flowControl": {
+      "acquireCount": {
+        "high": 0,
+        "low": 1,
+        "unsigned": false
+      }
+    },
+    "storage": {},
+    "millis": 0,
+    "planSummary": "COLLSCAN",
+    "planningTimeMicros": 133,
+    "execStats": {
+      "stage": "UPDATE",
+      "nReturned": 0,
+      "executionTimeMillisEstimate": 0,
+      "works": 2,
+      "advanced": 0,
+      "needTime": 1,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "nMatched": 1,
+      "nWouldModify": 1,
+      "nWouldUpsert": 0,
+      "inputStage": {
+        "stage": "COLLSCAN",
+        "filter": {
+          "nombre": {
+            "$eq": "Luis Medina"
+          }
+        },
+        "nReturned": 1,
+        "executionTimeMillisEstimate": 0,
+        "works": 1,
+        "advanced": 1,
+        "needTime": 0,
+        "needYield": 0,
+        "saveState": 1,
+        "restoreState": 1,
+        "isEOF": 0,
+        "direction": "forward",
+        "docsExamined": 1
+      }
+    },
+    "ts": "2026-11-17T00:13:54.840Z",
+    "client": "127.0.0.1",
+    "appName": "mongosh 2.14.2",
+    "allUsers": [
+      {
+        "user": "admin",
+        "db": "admin"
+      }
+    ],
+    "user": "admin@admin"
+  },
+  {
+    "op": "remove",
+    "ns": "comercial.clientes",
+    "command": {
+      "q": {
+        "nombre": "Pedro Ramirez"
+      },
+      "limit": 1
+    },
+    "keysExamined": 0,
+    "docsExamined": 4,
+    "ndeleted": 1,
+    "keysDeleted": 1,
+    "numYield": 0,
+    "locks": {
+      "ParallelBatchWriterMode": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          },
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "ReplicationStateTransition": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          },
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Database": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Collection": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      }
+    },
+    "flowControl": {
+      "acquireCount": {
+        "high": 0,
+        "low": 1,
+        "unsigned": false
+      }
+    },
+    "storage": {},
+    "millis": 0,
+    "planSummary": "COLLSCAN",
+    "planningTimeMicros": 143,
+    "execStats": {
+      "stage": "DELETE",
+      "nReturned": 0,
+      "executionTimeMillisEstimate": 0,
+      "works": 5,
+      "advanced": 0,
+      "needTime": 4,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "nWouldDelete": 1,
+      "inputStage": {
+        "stage": "COLLSCAN",
+        "filter": {
+          "nombre": {
+            "$eq": "Pedro Ramirez"
+          }
+        },
+        "nReturned": 1,
+        "executionTimeMillisEstimate": 0,
+        "works": 4,
+        "advanced": 1,
+        "needTime": 3,
+        "needYield": 0,
+        "saveState": 1,
+        "restoreState": 1,
+        "isEOF": 0,
+        "direction": "forward",
+        "docsExamined": 4
+      }
+    },
+    "ts": "2026-11-17T00:14:04.399Z",
+    "client": "127.0.0.1",
+    "appName": "mongosh 2.14.2",
+    "allUsers": [
+      {
+        "user": "admin",
+        "db": "admin"
+      }
+    ],
+    "user": "admin@admin"
+  },
+  {
+    "op": "query",
+    "ns": "comercial.system.profile",
+    "command": {
+      "find": "system.profile",
+      "filter": {},
+      "sort": {
+        "ts": -1
+      },
+      "limit": 10,
+      "lsid": {
+        "id": "c6b52f2c-f06c-4076-9de5-11f458830a3e"
+      },
+      "$db": "comercial"
+    },
+    "keysExamined": 0,
+    "docsExamined": 4,
+    "hasSortStage": true,
+    "nBatches": 1,
+    "cursorExhausted": true,
+    "numYield": 0,
+    "nreturned": 4,
+    "queryHash": "52FF7C5B",
+    "planCacheKey": "52FF7C5B",
+    "queryFramework": "classic",
+    "locks": {
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 2,
+            "unsigned": false
+          }
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 2,
+            "unsigned": false
+          }
+        }
+      }
+    },
+    "flowControl": {},
+    "storage": {},
+    "responseLength": 4717,
+    "protocol": "op_msg",
+    "millis": 0,
+    "planSummary": "COLLSCAN",
+    "planningTimeMicros": 180,
+    "execStats": {
+      "stage": "SORT",
+      "nReturned": 4,
+      "executionTimeMillisEstimate": 0,
+      "works": 10,
+      "advanced": 4,
+      "needTime": 5,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "sortPattern": {
+        "ts": -1
+      },
+      "memLimit": 104857600,
+      "limitAmount": 10,
+      "type": "simple",
+      "totalDataSizeSorted": 4720,
+      "usedDisk": false,
+      "spills": 0,
+      "spilledDataStorageSize": 0,
+      "inputStage": {
+        "stage": "COLLSCAN",
+        "nReturned": 4,
+        "executionTimeMillisEstimate": 0,
+        "works": 5,
+        "advanced": 4,
+        "needTime": 0,
+        "needYield": 0,
+        "saveState": 0,
+        "restoreState": 0,
+        "isEOF": 1,
+        "direction": "forward",
+        "docsExamined": 4
+      }
+    },
+    "ts": "2026-11-17T00:43:57.602Z",
+    "client": "127.0.0.1",
+    "appName": "mongosh 2.14.2",
+    "allUsers": [
+      {
+        "user": "admin",
+        "db": "admin"
+      }
+    ],
+    "user": "admin@admin"
+  },
+  {
+    "op": "query",
+    "ns": "comercial.system.profile",
+    "command": {
+      "find": "system.profile",
+      "filter": {
+        "op": {
+          "$in": [
+            "insert",
+            "update",
+            "remove"
+          ]
+        }
+      },
+      "sort": {
+        "ts": -1
+      },
+      "lsid": {
+        "id": "c6b52f2c-f06c-4076-9de5-11f458830a3e"
+      },
+      "$db": "comercial"
+    },
+    "keysExamined": 0,
+    "docsExamined": 5,
+    "hasSortStage": true,
+    "nBatches": 1,
+    "cursorExhausted": true,
+    "numYield": 0,
+    "nreturned": 3,
+    "queryHash": "ED2BE953",
+    "planCacheKey": "ED2BE953",
+    "queryFramework": "classic",
+    "locks": {
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 2,
+            "unsigned": false
+          }
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 2,
+            "unsigned": false
+          }
+        }
+      }
+    },
+    "flowControl": {},
+    "storage": {},
+    "responseLength": 3712,
+    "protocol": "op_msg",
+    "millis": 0,
+    "planSummary": "COLLSCAN",
+    "planningTimeMicros": 211,
+    "execStats": {
+      "stage": "SORT",
+      "nReturned": 3,
+      "executionTimeMillisEstimate": 0,
+      "works": 10,
+      "advanced": 3,
+      "needTime": 6,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "sortPattern": {
+        "ts": -1
+      },
+      "memLimit": 104857600,
+      "type": "simple",
+      "totalDataSizeSorted": 3686,
+      "usedDisk": false,
+      "spills": 0,
+      "spilledDataStorageSize": 0,
+      "inputStage": {
+        "stage": "COLLSCAN",
+        "filter": {
+          "op": {
+            "$in": [
+              "insert",
+              "remove",
+              "update"
+            ]
+          }
+        },
+        "nReturned": 3,
+        "executionTimeMillisEstimate": 0,
+        "works": 6,
+        "advanced": 3,
+        "needTime": 2,
+        "needYield": 0,
+        "saveState": 0,
+        "restoreState": 0,
+        "isEOF": 1,
+        "direction": "forward",
+        "docsExamined": 5
+      }
+    },
+    "ts": "2026-11-17T00:46:20.860Z",
+    "client": "127.0.0.1",
+    "appName": "mongosh 2.14.2",
+    "allUsers": [
+      {
+        "user": "admin",
+        "db": "admin"
+      }
+    ],
+    "user": "admin@admin"
+  },
+  {
+    "op": "query",
+    "ns": "comercial.clientes",
+    "command": {
+      "find": "clientes",
+      "filter": {},
+      "lsid": {
+        "id": "0840802b-6ff7-4c94-aa94-0deb17d6b4f6"
+      },
+      "$db": "comercial"
+    },
+    "keysExamined": 0,
+    "docsExamined": 3,
+    "nBatches": 1,
+    "cursorExhausted": true,
+    "numYield": 0,
+    "nreturned": 3,
+    "queryHash": "773D8541",
+    "planCacheKey": "773D8541",
+    "queryFramework": "classic",
+    "locks": {
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 2,
+            "unsigned": false
+          }
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 2,
+            "unsigned": false
+          }
+        }
+      }
+    },
+    "flowControl": {},
+    "storage": {},
+    "responseLength": 475,
+    "protocol": "op_msg",
+    "millis": 0,
+    "planSummary": "COLLSCAN",
+    "planningTimeMicros": 125,
+    "execStats": {
+      "stage": "COLLSCAN",
+      "nReturned": 3,
+      "executionTimeMillisEstimate": 0,
+      "works": 4,
+      "advanced": 3,
+      "needTime": 0,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "direction": "forward",
+      "docsExamined": 3
+    },
+    "ts": "2026-11-17T00:51:39.500Z",
+    "client": "127.0.0.1",
+    "appName": "mongosh 2.14.2",
+    "allUsers": [
+      {
+        "user": "app_ventas",
+        "db": "comercial"
+      }
+    ],
+    "user": "app_ventas@comercial"
+  },
+  {
+    "op": "query",
+    "ns": "comercial.system.profile",
+    "command": {
+      "find": "system.profile",
+      "filter": {},
+      "sort": {
+        "ts": -1
+      },
+      "lsid": {
+        "id": "c6b52f2c-f06c-4076-9de5-11f458830a3e"
+      },
+      "$db": "comercial"
+    },
+    "keysExamined": 0,
+    "docsExamined": 7,
+    "hasSortStage": true,
+    "nBatches": 1,
+    "cursorExhausted": true,
+    "numYield": 0,
+    "nreturned": 7,
+    "queryHash": "52FF7C5B",
+    "planCacheKey": "52FF7C5B",
+    "queryFramework": "classic",
+    "locks": {
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 2,
+            "unsigned": false
+          }
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 2,
+            "unsigned": false
+          }
+        }
+      }
+    },
+    "flowControl": {},
+    "storage": {},
+    "responseLength": 8434,
+    "protocol": "op_msg",
+    "millis": 0,
+    "planSummary": "COLLSCAN",
+    "planningTimeMicros": 165,
+    "execStats": {
+      "stage": "SORT",
+      "nReturned": 7,
+      "executionTimeMillisEstimate": 0,
+      "works": 16,
+      "advanced": 7,
+      "needTime": 8,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "sortPattern": {
+        "ts": -1
+      },
+      "memLimit": 104857600,
+      "type": "simple",
+      "totalDataSizeSorted": 8524,
+      "usedDisk": false,
+      "spills": 0,
+      "spilledDataStorageSize": 0,
+      "inputStage": {
+        "stage": "COLLSCAN",
+        "nReturned": 7,
+        "executionTimeMillisEstimate": 0,
+        "works": 8,
+        "advanced": 7,
+        "needTime": 0,
+        "needYield": 0,
+        "saveState": 0,
+        "restoreState": 0,
+        "isEOF": 1,
+        "direction": "forward",
+        "docsExamined": 7
+      }
+    },
+    "ts": "2026-11-17T00:56:48.687Z",
+    "client": "127.0.0.1",
+    "appName": "mongosh 2.14.2",
+    "allUsers": [
+      {
+        "user": "admin",
+        "db": "admin"
+      }
+    ],
+    "user": "admin@admin"
+  },
+  {
+    "op": "query",
+    "ns": "comercial.system.profile",
+    "command": {
+      "find": "system.profile",
+      "filter": {},
+      "sort": {
+        "ts": -1
+      },
+      "lsid": {
+        "id": "c6b52f2c-f06c-4076-9de5-11f458830a3e"
+      },
+      "$db": "comercial"
+    },
+    "keysExamined": 0,
+    "docsExamined": 8,
+    "hasSortStage": true,
+    "nBatches": 1,
+    "cursorExhausted": true,
+    "numYield": 0,
+    "nreturned": 8,
+    "queryHash": "52FF7C5B",
+    "planCacheKey": "52FF7C5B",
+    "queryFramework": "classic",
+    "locks": {
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 2,
+            "unsigned": false
+          }
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 2,
+            "unsigned": false
+          }
+        }
+      }
+    },
+    "flowControl": {},
+    "storage": {},
+    "responseLength": 9732,
+    "protocol": "op_msg",
+    "millis": 0,
+    "planSummary": "COLLSCAN",
+    "planningTimeMicros": 172,
+    "execStats": {
+      "stage": "SORT",
+      "nReturned": 8,
+      "executionTimeMillisEstimate": 0,
+      "works": 18,
+      "advanced": 8,
+      "needTime": 9,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "sortPattern": {
+        "ts": -1
+      },
+      "memLimit": 104857600,
+      "type": "simple",
+      "totalDataSizeSorted": 9851,
+      "usedDisk": false,
+      "spills": 0,
+      "spilledDataStorageSize": 0,
+      "inputStage": {
+        "stage": "COLLSCAN",
+        "nReturned": 8,
+        "executionTimeMillisEstimate": 0,
+        "works": 9,
+        "advanced": 8,
+        "needTime": 0,
+        "needYield": 0,
+        "saveState": 0,
+        "restoreState": 0,
+        "isEOF": 1,
+        "direction": "forward",
+        "docsExamined": 8
+      }
+    },
+    "ts": "2026-11-17T00:56:56.271Z",
+    "client": "127.0.0.1",
+    "appName": "mongosh 2.14.2",
+    "allUsers": [
+      {
+        "user": "admin",
+        "db": "admin"
+      }
+    ],
+    "user": "admin@admin"
+  },
+  {
+    "op": "update",
+    "ns": "comercial.clientes",
+    "command": {
+      "q": {
+        "_id": 1
+      },
+      "u": {
+        "$set": {
+          "telefono": "6671234567"
+        }
+      },
+      "multi": false,
+      "upsert": false
+    },
+    "keysExamined": 0,
+    "docsExamined": 0,
+    "nMatched": 0,
+    "nModified": 0,
+    "nUpserted": 0,
+    "numYield": 0,
+    "locks": {
+      "ParallelBatchWriterMode": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          },
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "ReplicationStateTransition": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          },
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Database": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Collection": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      }
+    },
+    "flowControl": {
+      "acquireCount": {
+        "high": 0,
+        "low": 1,
+        "unsigned": false
+      }
+    },
+    "storage": {},
+    "millis": 0,
+    "planSummary": "IDHACK",
+    "planningTimeMicros": 85,
+    "execStats": {
+      "stage": "UPDATE",
+      "nReturned": 0,
+      "executionTimeMillisEstimate": 0,
+      "works": 1,
+      "advanced": 0,
+      "needTime": 0,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "nMatched": 0,
+      "nWouldModify": 0,
+      "nWouldUpsert": 0,
+      "inputStage": {
+        "stage": "IDHACK",
+        "nReturned": 0,
+        "executionTimeMillisEstimate": 0,
+        "works": 1,
+        "advanced": 0,
+        "needTime": 0,
+        "needYield": 0,
+        "saveState": 0,
+        "restoreState": 0,
+        "isEOF": 1,
+        "keysExamined": 0,
+        "docsExamined": 0
+      }
+    },
+    "ts": "2026-11-17T04:45:56.910Z",
+    "client": "127.0.0.1",
+    "appName": "mongosh 2.14.2",
+    "allUsers": [
+      {
+        "user": "admin",
+        "db": "admin"
+      }
+    ],
+    "user": "admin@admin"
+  },
+  {
+    "op": "update",
+    "ns": "comercial.clientes",
+    "command": {
+      "q": {
+        "_id": "6afb9ae4df00ebf88225e308"
+      },
+      "u": {
+        "$set": {
+          "telefono": "6671234567"
+        }
+      },
+      "multi": false,
+      "upsert": false
+    },
+    "keysExamined": 1,
+    "docsExamined": 1,
+    "nMatched": 1,
+    "nModified": 1,
+    "nUpserted": 0,
+    "keysInserted": 0,
+    "keysDeleted": 0,
+    "numYield": 0,
+    "locks": {
+      "ParallelBatchWriterMode": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "FeatureCompatibilityVersion": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          },
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "ReplicationStateTransition": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          },
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Database": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Collection": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      }
+    },
+    "flowControl": {
+      "acquireCount": {
+        "high": 0,
+        "low": 1,
+        "unsigned": false
+      }
+    },
+    "storage": {},
+    "millis": 0,
+    "planSummary": "IDHACK",
+    "planningTimeMicros": 61,
+    "execStats": {
+      "stage": "UPDATE",
+      "nReturned": 0,
+      "executionTimeMillisEstimate": 0,
+      "works": 2,
+      "advanced": 0,
+      "needTime": 1,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "nMatched": 1,
+      "nWouldModify": 1,
+      "nWouldUpsert": 0,
+      "inputStage": {
+        "stage": "IDHACK",
+        "nReturned": 1,
+        "executionTimeMillisEstimate": 0,
+        "works": 1,
+        "advanced": 1,
+        "needTime": 0,
+        "needYield": 0,
+        "saveState": 1,
+        "restoreState": 1,
+        "isEOF": 1,
+        "keysExamined": 1,
+        "docsExamined": 1
+      }
+    },
+    "ts": "2026-11-17T04:46:48.115Z",
+    "client": "127.0.0.1",
+    "appName": "mongosh 2.14.2",
+    "allUsers": [
+      {
+        "user": "admin",
+        "db": "admin"
+      }
+    ],
+    "user": "admin@admin"
+  }
+]
